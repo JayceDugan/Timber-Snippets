@@ -11,6 +11,13 @@
     "categories": [
         "Snippets"
     ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/JDevx97/Timber-Snippets/issues"
+    },
+    "bugs": {
+      "url": "https://github.com/JDevx97/Timber-Snippets/issues"
+    },
     "keywords": ["Snippets", "Timber", "Twig", "Upstatement", "Wordpress", "WP"],
     "contributes": {
         "snippets": [
