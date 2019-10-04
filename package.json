@@ -1,5 +1,6 @@
 {
     "name": "timber-snippets",
+    "icon": "./timber-icon.png",
     "publisher": "jdcreations",
     "displayName": "Timber Snippets",
     "description": "Timber Snippets is a collection of short-hand snippets from https://timber.github.io. Timber is a faster, easier and more powerful way to build Wordpress themes, because Wordpress is awesome, but the loop isn't. Timber is developed and maintained by Upstatement.",
