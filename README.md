@@ -1,5 +1,8 @@
 # Timber Snippets
 
+![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/jdcreations.timber-snippets?color=%234D8AB3&label=VS%20Marketplace%20Downloads)
+![GitHub](https://img.shields.io/github/license/Jdevx97/Timber-Snippets?color=rgb%2854%2C%20237%2C%2017%29)
+
 Timber Snippets is a VS Code Extension built to speed up development workflow with the Timber + Twig framework, providing simple, reliable snippets for common [Timber.](https://timber.github.io/docs) methods.
 
 All snippets are prefixed with `ts` (Timber Snippets).
@@ -33,7 +36,7 @@ This snippet outputs a setup for retrieving the Timber Context, it allows two op
 
 ### `tsnew`
 
-tsnew renders output for assigning a context key to `Timber\Post()`, `Timber\Term()`, or `Timber\Menu()`. 
+tsnew renders output for assigning a context key to `Timber\Post()`, `Timber\Term()`, or `Timber\Menu()`.
 
 `tsnew` => `$context['post'] = new Timber\Post();`
 
@@ -49,11 +52,11 @@ tsrender converts to the `Timber::render` method.
 
 ### `tsarndr`
 
-tsarndr converts to a more advanced `Timber::render` method, implementing a basis for dynamic rendering based on a components post name. 
+tsarndr converts to a more advanced `Timber::render` method, implementing a basis for dynamic rendering based on a components post name.
 
 `tsarnr => Timber::render( array( 'post-' . post->post_name . '.twig', 'page.twig' ), $context );`
 
-### `tsuesc` 
+### `tsuesc`
 
 tsuesc converts to the standard output for universal timber escaping.
 
@@ -79,7 +82,7 @@ Advanced Timber Menu Output. (Args printed above)
 
 ```
 $args = array(
-  'depth' => 
+  'depth' =>
 );
 
 $context['primary-menu'] = new Timber\Menu( 'primary-menu', $args );
@@ -91,7 +94,7 @@ Implements Timber support for Woocommerce.
 
 ```
 function theme_add_woocommerce_support() {
-  add_theme_support("woocommerce"); 
+  add_theme_support("woocommerce");
 }
 
 add_action('after_setup_theme','theme_add_woocommerce_support');
@@ -102,7 +105,7 @@ Outputs Timber Routing setup.
 
 ```
 Routes::map('info/:name'), function($params) {
-  $query = 
+  $query =
   Routes::load('archive.php', null, $qry, 200);
 });
 ```
