@@ -1,34 +1,41 @@
 {
-    "name": "timber-snippets",
-    "icon": "timber-icon.png",
-    "publisher": "jdcreations",
-    "author": "Jayce Dugan",
-    "email": "jdxfreelancing@gmail.com",
-    "url": "https://jdcreations.com.au",
-    "displayName": "Timber Snippets",
-    "description": "Timber Snippets is a collection of short-hand snippets from https://timber.github.io. Timber is a faster, easier and more powerful way to build Wordpress themes, because Wordpress is awesome, but the loop isn't. Timber is developed and maintained by Upstatement.",
-    "version": "1.0.0",
-    "license": "gpl-3.0",
-    "engines": {
-        "vscode": "^1.38.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/JDevx97/Timber-Snippets/issues"
-    },
-    "bugs": {
-      "url": "https://github.com/JDevx97/Timber-Snippets/issues"
-    },
-    "keywords": ["Snippets", "Timber", "Twig", "Upstatement", "Wordpress", "WP"],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "php",
-                "path": "./snippets/snippets.json"
-            }
-        ]
-    }
+  "name": "timber-snippets",
+  "icon": "timber-icon.png",
+  "publisher": "jdcreations",
+  "author": "Jayce Dugan",
+  "email": "jdxfreelancing@gmail.com",
+  "url": "https://jdcreations.com.au",
+  "displayName": "Timber Snippets",
+  "description": "Timber Snippets is a collection of short-hand snippets from https://timber.github.io. Timber is a faster, easier and more powerful way to build Wordpress themes, because Wordpress is awesome, but the loop isn't. Timber is developed and maintained by Upstatement.",
+  "version": "1.1.0",
+  "license": "gpl-3.0",
+  "engines": {
+    "vscode": "^1.38.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JDevx97/Timber-Snippets/issues"
+  },
+  "bugs": {
+    "url": "https://github.com/JDevx97/Timber-Snippets/issues"
+  },
+  "keywords": [
+    "Snippets",
+    "Timber",
+    "Twig",
+    "Upstatement",
+    "Wordpress",
+    "WP"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "php",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
 }
