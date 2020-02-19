@@ -79,7 +79,7 @@
   "Timber Routing": {
     "prefix": "tsroute",
     "body": [
-      "Routes::map('${1:info/:name}'), function(${2:$$params}) {",
+      "Routes::map('${1:info/:name}', function(${2:$$params}) {",
       "  ${3:$$query} = $4",
       "  Routes::load('${5:archive.php}', null, ${6:$$qry}, 200);",
       "});",
