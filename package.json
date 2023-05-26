@@ -3,11 +3,11 @@
   "icon": "timber-icon.png",
   "publisher": "jdcreations",
   "author": "Jayce Dugan",
-  "email": "jdxfreelancing@gmail.com",
-  "url": "https://jdcreations.com.au",
+  "email": "jgtdsoftware@gmail.com",
+  "url": "https://github.com/JayceDugan/Timber-Snippets",
   "displayName": "Timber Snippets",
   "description": "Timber Snippets is a collection of short-hand snippets from https://timber.github.io. Timber is a faster, easier and more powerful way to build Wordpress themes, because Wordpress is awesome, but the loop isn't. Timber is developed and maintained by Upstatement.",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "license": "MIT",
   "engines": {
     "vscode": "^1.38.0"
@@ -17,10 +17,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/JDevx97/Timber-Snippets/issues"
+    "url": "https://github.com/JayceDugan/Timber-Snippets"
   },
   "bugs": {
-    "url": "https://github.com/JDevx97/Timber-Snippets/issues"
+    "url": "https://github.com/JayceDugan/Timber-Snippets/issues"
   },
   "keywords": [
     "Snippets",
