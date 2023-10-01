@@ -1,113 +1,65 @@
-# Timber Snippets
+# timber-snippets README
 
-![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/jdcreations.timber-snippets?color=%234D8AB3&label=VS%20Marketplace%20Downloads)
-![GitHub](https://img.shields.io/github/license/Jdevx97/Timber-Snippets?color=rgb%2854%2C%20237%2C%2017%29)
+This is the README for your extension "timber-snippets". After writing up a brief description, we recommend including the following sections.
 
-Timber Snippets is a VS Code Extension built to speed up development workflow with the Timber + Twig framework, providing simple, reliable snippets for common [Timber.](https://timber.github.io/docs) methods.
+## Features
 
-All snippets are prefixed with `ts` (Timber Snippets).
+Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-<a href="https://www.buymeacoffee.com/jaycedugan" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+For example if there is an image subfolder under your extension project workspace:
 
-## Snippets
+\!\[feature X\]\(images/feature-x.png\)
 
-| Snippet  | Purpose                                     |
-| -------- | ------------------------------------------- |
-| tsctxt   | Retrieve Timber Context                     |
-| tsnew    | New Timber Instance (Post, Menu, Term)      |
-| tsrender | Simple Timber Context Render.               |
-| tsarndr  | Advanced Timber Context Render.             |
-| tsuesc   | Universal timnber Escaping                  |
-| tsext    | Extend a Timber API                         |
-| tsnmenu  | Setup a Timber Menu                         |
-| tsnamenu | Advanced Timber Menu Setup                  |
-| tswoosup | Enable Woocommerce Theme Support for Timber |
-| tsroute  | Timber Routing                              |
+> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
-## Examples
+## Requirements
 
-### `tsctxt`
+If you have any requirements or dependencies, add a section describing those and how to install and configure them.
 
-This snippet outputs a setup for retrieving the Timber Context, it allows two options
+## Extension Settings
 
-*Usage:*
+Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
 
-`tsctxt` => `$context = Timber::context();`
+For example:
 
-`tsctxt` => `$context = Timber::get_context();`
+This extension contributes the following settings:
 
-### `tsnew`
+* `myExtension.enable`: Enable/disable this extension.
+* `myExtension.thing`: Set to `blah` to do something.
 
-tsnew renders output for assigning a context key to `Timber\Post()`, `Timber\Term()`, or `Timber\Menu()`.
+## Known Issues
 
-`tsnew` => `$context['post'] = new Timber\Post();`
+Calling out known issues can help limit users opening duplicate issues against your extension.
 
-`tsnew` => `$context['post'] = new Timber\Term();`
+## Release Notes
 
-`tsnew` => `$context['post'] = new Timber\Menu();`
+Users appreciate release notes as you update your extension.
 
-### `tsrender`
+### 1.0.0
 
-tsrender converts to the `Timber::render` method.
+Initial release of ...
 
-`tsrender` => `Timber::render('example.twig', $context);`
+### 1.0.1
 
-### `tsarndr`
+Fixed issue #.
 
-tsarndr converts to a more advanced `Timber::render` method, implementing a basis for dynamic rendering based on a components post name.
+### 1.1.0
 
-`tsarnr => Timber::render( array( 'post-' . post->post_name . '.twig', 'page.twig' ), $context );`
+Added features X, Y, and Z.
 
-### `tsuesc`
+---
 
-tsuesc converts to the standard output for universal timber escaping.
+## Working with Markdown
 
-`tsuesc => if( class_exists('Timber') ) { Timber::autoescape = 'html'; }`
+You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
 
-### `tsext`
+* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
+* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
+* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
 
-tsext is a basis for implementating a class that extends an instance of Timber.
+## For more information
 
-`tsext => class MySitePost extends Timber\Post`
+* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
-[All Extension Options](https://timber.github.io/docs/reference/)
-
-### `tsnmenu`
-
-Simple Timber menu output.
-
-`tsnmenu => $context['primary-menu'] = new Timber\Menu( 'primary-menu' );`
-
-### `tsnamenu`
-
-Advanced Timber Menu Output. (Args printed above)
-
-```
-$args = array(
-  'depth' =>
-);
-
-$context['primary-menu'] = new Timber\Menu( 'primary-menu', $args );
-```
-
-### `tswoosup`
-
-Implements Timber support for Woocommerce.
-
-```
-function theme_add_woocommerce_support() {
-  add_theme_support("woocommerce");
-}
-
-add_action('after_setup_theme','theme_add_woocommerce_support');
-````
-### `tsroute`
-
-Outputs Timber Routing setup.
-
-```
-Routes::map('info/:name'), function($params) {
-  $query =
-  Routes::load('archive.php', null, $qry, 200);
-});
-```
+**Enjoy!**

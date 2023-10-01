@@ -4,26 +4,6 @@ All notable changes to the "timber-snippets" extension will be documented in thi
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [1.2.2]
-
-- Updated metadata / package.json links
-
-## [1.2.1]
-- Fixes a rogue parenthesis in tsroute
-
-## [1.2.0]
-
-- Minor 
-
-  - Badges
-
-## [1.1.0]
-
-Minor
-
-  - Email Fix
-  - README.md updates
-
-## [1.0.0]
+## [Unreleased]
 
 - Initial release
